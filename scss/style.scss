@@ -3,4 +3,6 @@
 @use 'settings';
 @use 'global';
 @use 'variables';
-@use 'responsive';
+@use 'mixins';
+@use 'utility';
+@use 'frontPage';
