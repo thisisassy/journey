@@ -7,10 +7,18 @@
   <?php wp_head(); ?>
 </head>
 
-<header>
-  <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-</header>
-
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <div class="l-wrapper">
+    <header class="l-header">
+      <h1 class="u-blogTitle"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
+      <nav>
+        <ul>
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+          <li><a href="">MENU</a></li>
+        </ul>
+      </nav>
+    </header>
