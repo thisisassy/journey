@@ -1,0 +1,22 @@
+.u-blogTitle {
+  font-size: var(--fontSize-2l);
+  font-weight: var(--fontWeight-default);
+  line-height: 50px;
+}
+
+.u-title {
+  font-size: var(--heading-2);
+  line-height: var(--lineHeight-m);
+  color: var(--text);
+}
+
+.u-dateTime {
+  font-size: var(--fontSize-2s);
+  color: var(--subText);
+  margin: var(--spacing-1) 0 0;
+}
+
+// footer
+.u-copyright {
+  font-size: var(--fontSize-2s);
+}

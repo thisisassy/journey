@@ -1,0 +1,43 @@
+@use 'mixins';
+@use 'variables';
+
+.l-footSide {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-large) 0 0;
+
+  @include mixins.mq() {
+    flex-direction: column;
+  }
+
+  @include mixins.mq(lg) {
+    flex-direction: row;
+  }
+}
+
+.l-footer {
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-4) var(--spacing-3);
+
+  @include mixins.mq(xl) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--spacing-5) var(--spacing-10);
+  }
+}
+
+.o-footerLinks {
+  display: flex;
+
+  li {
+    margin: 0 var(--spacing-1) 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

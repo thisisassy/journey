@@ -1,0 +1,13 @@
+// breakpoint
+$breakpoints: (
+  'sm': 320px,
+  'md': 520px,
+  'lg': 960px,
+  'xl': 1024px,
+  ) !default;
+
+@mixin mq($breakpoint: md) {
+  @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
