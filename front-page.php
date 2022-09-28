@@ -20,6 +20,13 @@
     <?php endwhile; endif; ?>
   </div>
 
+  <aside class="l-footSide">
+    <section>
+      サイドバー左
+    </section>
+    <section>サイドバー中央</section>
+    <section>サイドバー左</section>
+  </aside>
 </main>
 
 <?php get_footer(); ?>

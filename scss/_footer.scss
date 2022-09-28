@@ -1,0 +1,16 @@
+@use 'mixins';
+@use 'variables';
+
+.l-footSide {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-large) 0 0;
+
+  @include mixins.mq() {
+    flex-direction: column;
+  }
+
+  @include mixins.mq(lg) {
+    flex-direction: row;
+  }
+}

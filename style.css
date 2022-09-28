@@ -114,3 +114,19 @@ table {
   height: 25vh;
   object-fit: cover;
 }
+
+.l-footSide {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-large) 0 0;
+}
+@media screen and (min-width: 520px) {
+  .l-footSide {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 960px) {
+  .l-footSide {
+    flex-direction: row;
+  }
+}
