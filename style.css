@@ -85,6 +85,7 @@ table {
   font-size: var(--heading-2);
   line-height: var(--lineHeight-m);
   color: var(--text);
+  margin: var(--spacing-1) 0 0;
 }
 
 .u-dateTime {
@@ -181,6 +182,7 @@ table {
   width: 100%;
   height: 25vh;
   object-fit: cover;
+  vertical-align: bottom;
 }
 
 .l-container {
