@@ -5,10 +5,13 @@
 @use 'variables';
 @use 'mixins';
 @use 'utility';
+
 // components
 @use 'header';
 @use 'footer';
 @use 'sidebar';
+
 // page
+@use 'layout';
 @use 'frontPage';
 @use 'single';

@@ -20,13 +20,15 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-4) var(--spacing-3);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
 
   @include mixins.mq(xl) {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: var(--spacing-5) var(--spacing-10);
+    padding-top: var(--spacing-5);
+    padding-bottom: var(--spacing-5);
   }
 }
 

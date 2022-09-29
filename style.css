@@ -104,7 +104,8 @@ table {
 }
 
 .l-header {
-  padding: 30px var(--spacing-10);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .l-footSide {
@@ -128,14 +129,16 @@ table {
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding: var(--spacing-4) var(--spacing-3);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
 }
 @media screen and (min-width: 1024px) {
   .l-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: var(--spacing-5) var(--spacing-10);
+    padding-top: var(--spacing-5);
+    padding-bottom: var(--spacing-5);
   }
 }
 
@@ -151,6 +154,21 @@ table {
 
 .l-sidebar {
   width: 30%;
+}
+
+.l-header,
+.l-footer,
+.l-contentInner {
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+}
+@media screen and (min-width: 1024px) {
+  .l-header,
+.l-footer,
+.l-contentInner {
+    padding-right: var(--spacing-10);
+    padding-left: var(--spacing-10);
+  }
 }
 
 .l-entryList {

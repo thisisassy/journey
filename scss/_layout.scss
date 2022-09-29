@@ -1,0 +1,14 @@
+@use 'mixins';
+@use 'variables';
+
+.l-header,
+.l-footer,
+.l-contentInner {
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+
+  @include mixins.mq(xl) {
+    padding-right: var(--spacing-10);
+    padding-left: var(--spacing-10);
+  }
+}
