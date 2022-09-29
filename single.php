@@ -18,12 +18,25 @@
       </div>
       <?php endwhile; endif; ?>
       <div class="o-author">
-        <p>この記事を書いた人</p>
+        <div class="o-authorHead">
+          <h4>Author</h4>
+          <p>この記事を書いた人</p>
+        </div>
+        <div class="o-profile">
+          <img src="" />
+          <div class="u-profileText">
+            <h5>こまざわ</h5>
+            <p>ブロガーのききです。
+              この記事がためになったらぜひサポートしてください。
+              詳しいプロイールはこちら</p>
+          </div>
+        </div>
       </div>
 
       <section class="l-relatedPosts">
         <h3>こちらの記事もおすすめ</h3>
       </section>
+      <?php the_post_navigation(); ?>
     </article>
 
     <aside class="l-sidebar">

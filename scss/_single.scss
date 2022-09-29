@@ -31,6 +31,7 @@
 }
 
 .l-entryContent {
+  margin: 0 0 var(--spacing-9);
 
   h2,
   h3,
@@ -86,4 +87,24 @@
       line-height: var(--lineHeight-1l);
     }
   }
+}
+
+// pagination
+.nav-links {
+  display: flex;
+  margin: var(--spacing-5) 0;
+}
+
+.nav-previous {
+  flex: 1;
+}
+
+.nav-next {
+  flex: 1;
+  text-align: right;
+}
+
+.o-author {
+  background: #FAFAFA;
+  margin: var(--spacing-9) 0;
 }
