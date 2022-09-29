@@ -16,6 +16,11 @@
   margin: var(--spacing-1) 0 0;
 }
 
+.u-entryTitle {
+  font-size: var(--heading-1);
+  line-height: var(--lineHeight-m);
+}
+
 // footer
 .u-copyright {
   font-size: var(--fontSize-2s);

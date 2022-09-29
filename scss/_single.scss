@@ -1,0 +1,18 @@
+@use 'mixins';
+
+.l-container {
+  display: flex;
+  flex-direction: column;
+  column-gap: var(--spacing-5);
+  justify-content: space-between;
+  max-width: 1040px;
+  margin: 0 auto;
+
+  @include mixins.mq(xl) {
+    flex-direction: row;
+  }
+}
+
+.l-entryContainer {
+  width: 640px;
+}

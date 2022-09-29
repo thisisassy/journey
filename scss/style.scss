@@ -5,6 +5,10 @@
 @use 'variables';
 @use 'mixins';
 @use 'utility';
-@use 'frontPage';
+// components
 @use 'header';
 @use 'footer';
+@use 'sidebar';
+// page
+@use 'frontPage';
+@use 'single';
