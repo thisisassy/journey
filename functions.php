@@ -18,3 +18,26 @@ function mytheme_enqueue() {
   );
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue');
+
+// widget area
+function mytheme_widgets() {
+  register_sidebar(array(
+    'id' => 'sidebar-1',
+    'name' => 'エントリーサイドバー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>'
+  ));
+  register_sidebar(array(
+    'id' => 'sidebar-2',
+    'name' => 'フッターサイドバー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>'
+  ));
+  register_sidebar(array(
+    'id' => 'sidebar-3',
+    'name' => 'フッターナビメニュー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>'
+  ));
+}
+add_action('widgets_init', 'mytheme_widgets');

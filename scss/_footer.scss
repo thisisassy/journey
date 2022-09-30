@@ -1,39 +1,59 @@
 @use 'mixins';
 @use 'variables';
 
-.l-footSide {
-  display: flex;
-  justify-content: space-between;
-  margin: var(--spacing-large) 0 0;
-
-  @include mixins.mq() {
-    flex-direction: column;
-  }
-
-  @include mixins.mq(lg) {
-    flex-direction: row;
-  }
-}
-
 .l-footer {
   background: #222;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   padding-top: var(--spacing-4);
   padding-bottom: var(--spacing-4);
+  margin: var(--spacing-large) 0 0;
 
   @include mixins.mq(xl) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
     padding-top: var(--spacing-5);
     padding-bottom: var(--spacing-5);
   }
 }
 
+.l-footerOuter {
+  @include mixins.mq(xl) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--spacing-4);
+  }
+
+  .widgettitle {
+    color: #fff;
+  }
+}
+
+.l-footerInner {
+  @include mixins.mq(sm) {
+    margin: var(--spacing-5) 0 0;
+  }
+
+  @include mixins.mq(xl) {
+    margin-top: 0;
+  }
+
+  .widget_nav_menu {
+    ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+      margin: 0 var(--spacing-2) 0 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
 .o-footerLinks {
   display: flex;
+  justify-content: flex-start;
 
   li {
     margin: 0 var(--spacing-1) 0 0;

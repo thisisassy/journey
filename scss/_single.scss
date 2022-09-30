@@ -15,7 +15,15 @@
 }
 
 .l-entryContainer {
-  width: 640px;
+  width: 100%;
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+  margin: 0 0 var(--spacing-8);
+
+  @include mixins.mq(xl) {
+    width: 640px;
+    margin-bottom: 0;
+  }
 }
 
 .o-meta {
@@ -43,30 +51,50 @@
   }
 
   h2 {
-    font-size: var(--heading-2);
+    font-size: var(--heading-3);
     padding: .5em .75em;
     background-color: #f6f6f6;
+
+    @include mixins.mq(xl) {
+      font-size: var(--heading-2);
+    }
   }
 
   h3 {
-    font-size: var(--heading-3);
+    font-size: var(--heading-4);
     padding: .55em 0;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+
+    @include mixins.mq(xl) {
+      font-size: var(--heading-3);
+    }
   }
 
   h4 {
-    font-size: var(--heading-4);
+    font-size: var(--heading-5);
     padding: .25em 0 .25em .75em;
     border-left: 6px solid #ccc;
+
+    @include mixins.mq(xl) {
+      font-size: var(--heading-4);
+    }
   }
 
   h5 {
-    font-size: var(--heading-5);
+    font-size: var(--heading-6);
+
+    @include mixins.mq(xl) {
+      font-size: var(--heading-5);
+    }
   }
 
   h6 {
     font-size: var(--heading-6);
+
+    @include mixins.mq(xl) {
+      font-size: var(--heading-6);
+    }
   }
 
   p {
