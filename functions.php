@@ -27,5 +27,17 @@ function mytheme_widgets() {
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget' => '</section>'
   ));
+  register_sidebar(array(
+    'id' => 'sidebar-2',
+    'name' => 'フッターサイドバー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>'
+  ));
+  register_sidebar(array(
+    'id' => 'sidebar-3',
+    'name' => 'フッターナビメニュー',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>'
+  ));
 }
 add_action('widgets_init', 'mytheme_widgets');

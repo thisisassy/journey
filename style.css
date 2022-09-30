@@ -135,22 +135,6 @@ table {
   padding-bottom: 30px;
 }
 
-.l-footSide {
-  display: flex;
-  justify-content: space-between;
-  margin: var(--spacing-large) 0 0;
-}
-@media screen and (min-width: 520px) {
-  .l-footSide {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 960px) {
-  .l-footSide {
-    flex-direction: row;
-  }
-}
-
 .l-footer {
   background: #222;
   color: #fff;
