@@ -40,9 +40,7 @@
     </article>
 
     <aside class="l-sidebar">
-      <section class="o-sideWidget">
-        <h4 class="u-sideTitle">Profile</h4>
-      </section>
+      <?php get_sidebar('o-sideWidget'); ?>
     </aside>
   </div>
 </main>
