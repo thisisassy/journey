@@ -1,5 +1,13 @@
+@use 'mixins';
+
 .l-sidebar {
-  width: 30%;
+  width: 100%;
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+
+  @include mixins.mq(xl) {
+    width: 30%;
+  }
 }
 
 .widget_block {

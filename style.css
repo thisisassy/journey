@@ -110,8 +110,13 @@ table {
 }
 
 .u-entryTitle {
-  font-size: var(--heading-1);
+  font-size: var(--heading-2);
   line-height: var(--lineHeight-m);
+}
+@media screen and (min-width: 1024px) {
+  .u-entryTitle {
+    font-size: var(--heading-1);
+  }
 }
 
 .u-profileText h5 {
@@ -175,7 +180,14 @@ table {
 }
 
 .l-sidebar {
-  width: 30%;
+  width: 100%;
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+}
+@media screen and (min-width: 1024px) {
+  .l-sidebar {
+    width: 30%;
+  }
 }
 
 .widget_block {
@@ -323,7 +335,16 @@ table {
 }
 
 .l-entryContainer {
-  width: 640px;
+  width: 100%;
+  padding-right: var(--spacing-3);
+  padding-left: var(--spacing-3);
+  margin: 0 0 var(--spacing-8);
+}
+@media screen and (min-width: 1024px) {
+  .l-entryContainer {
+    width: 640px;
+    margin-bottom: 0;
+  }
 }
 
 .o-meta {
@@ -350,26 +371,51 @@ table {
   margin: var(--spacing-3) 0;
 }
 .l-entryContent h2 {
-  font-size: var(--heading-2);
+  font-size: var(--heading-3);
   padding: 0.5em 0.75em;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 1024px) {
+  .l-entryContent h2 {
+    font-size: var(--heading-2);
+  }
+}
 .l-entryContent h3 {
-  font-size: var(--heading-3);
+  font-size: var(--heading-4);
   padding: 0.55em 0;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+@media screen and (min-width: 1024px) {
+  .l-entryContent h3 {
+    font-size: var(--heading-3);
+  }
+}
 .l-entryContent h4 {
-  font-size: var(--heading-4);
+  font-size: var(--heading-5);
   padding: 0.25em 0 0.25em 0.75em;
   border-left: 6px solid #ccc;
 }
+@media screen and (min-width: 1024px) {
+  .l-entryContent h4 {
+    font-size: var(--heading-4);
+  }
+}
 .l-entryContent h5 {
-  font-size: var(--heading-5);
+  font-size: var(--heading-6);
+}
+@media screen and (min-width: 1024px) {
+  .l-entryContent h5 {
+    font-size: var(--heading-5);
+  }
 }
 .l-entryContent h6 {
   font-size: var(--heading-6);
+}
+@media screen and (min-width: 1024px) {
+  .l-entryContent h6 {
+    font-size: var(--heading-6);
+  }
 }
 .l-entryContent p {
   font-size: var(--fontSize-m);
