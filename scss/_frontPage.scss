@@ -23,12 +23,17 @@
   width: 100%;
   height: auto;
 
+  .u-dateTime {
+    margin: var(--spacing-1) 0 0;
+  }
+
   figure {
     img {
       border: 1px solid #ddd;
       width: 100%;
       height: 25vh;
       object-fit: cover;
+      vertical-align: bottom;
     }
   }
 }

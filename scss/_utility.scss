@@ -1,19 +1,35 @@
 .u-blogTitle {
-  font-size: var(--fontSize-2l);
+  font-size: var(--fontSize-1l);
   font-weight: var(--fontWeight-default);
   line-height: 50px;
 }
 
 .u-title {
-  font-size: var(--heading-2);
+  font-size: var(--heading-3);
   line-height: var(--lineHeight-m);
   color: var(--text);
+  margin: var(--spacing-1) 0 0;
 }
 
 .u-dateTime {
   font-size: var(--fontSize-2s);
   color: var(--subText);
-  margin: var(--spacing-1) 0 0;
+}
+
+.u-entryTitle {
+  font-size: var(--heading-1);
+  line-height: var(--lineHeight-m);
+}
+
+// author
+.u-profileText {
+  h5 {
+    font-size: var(--fontSize-1s);
+  }
+
+  p {
+    font-size: var(--fontSize-2s);
+  }
 }
 
 // footer
