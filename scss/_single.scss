@@ -71,7 +71,7 @@
 
   p {
     font-size: var(--fontSize-m);
-    line-height: var(--lineHeight-m);
+    line-height: var(--lineHeight-1l);
   }
 
   ul,
@@ -105,6 +105,14 @@
 }
 
 .o-author {
+  display: flex;
+  align-items: flex-start;
+  column-gap: var(--spacing-2);
   background: #FAFAFA;
   margin: var(--spacing-9) 0;
+  padding: var(--spacing-2) 17px;
+}
+
+.o-profile {
+  flex: 1;
 }
