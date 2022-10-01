@@ -13,6 +13,5 @@
     </div>
   </div>
 </section>
-<?php if( is_active_sidebar('sidebar-1')): ?>
-<?php dynamic_sidebar('sidebar-1'); ?>
+<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar(1)) :?>
 <?php endif; ?>

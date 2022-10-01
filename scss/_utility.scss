@@ -7,10 +7,14 @@
 }
 
 .u-title {
-  font-size: var(--heading-3);
+  font-size: var(--heading-4);
   line-height: var(--lineHeight-m);
   color: var(--text);
   margin: var(--spacing-1) 0 0;
+}
+
+.u-archive-title {
+  font-size: var(--heading-3);
 }
 
 .u-dateTime {
@@ -45,5 +49,3 @@
   color: #efefef;
   text-align: right;
 }
-
-//  <h4 class="u-sideTitle">Profile</h4>
