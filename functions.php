@@ -5,6 +5,12 @@ add_theme_support('wp-block-styles');
 function mytheme_setup() {
   // アイキャッチ画像を有効化
   add_theme_support('post-thumbnails');
+
+  // nav menu
+  register_nav_menus( array(
+    'global-menu' => 'グローバルメニュー',
+    'footer-menu' => 'フッターメニュー',
+  ));
 }
 add_action('after_setup_theme', 'mytheme_setup');
 

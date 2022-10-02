@@ -11,6 +11,7 @@
 
   @include mixins.mq(xl) {
     flex-direction: row;
+    margin-top: var(--spacing-4);
   }
 }
 
