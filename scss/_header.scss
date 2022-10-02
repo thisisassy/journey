@@ -6,6 +6,19 @@
 }
 
 .o-globalNavi {
+  display: flex;
+  justify-content: space-between;
+  column-gap: var(--spacing-5);
+  flex-direction: column;
+
+  @include mixins.mq(xl) {
+    flex-direction: row;
+  }
+
+  .o-globalMenu {
+    width: 100%;
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -54,6 +67,13 @@
       &:last-child {
         border-bottom: none;
       }
+    }
+  }
+
+  .o-socialLinks {
+    .menu {
+      column-gap: var(--spacing-4);
+      flex-wrap: nowrap;
     }
   }
 }
