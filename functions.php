@@ -10,7 +10,8 @@ function mytheme_setup() {
   register_nav_menus( array(
     'global-menu' => 'グローバルメニュー',
     'footer-menu' => 'フッターメニュー',
-  ));
+    'social-links' => 'SNSリンク',
+    ));
 }
 add_action('after_setup_theme', 'mytheme_setup');
 
