@@ -14,7 +14,7 @@
   }
 }
 
-.l-footerOuter {
+.l-footerInner {
   @include mixins.mq(xl) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,22 +23,30 @@
 
   .widgettitle {
     color: #fff;
+    font-size: var(--heading-6);
   }
 }
 
-.l-footerInner {
-  @include mixins.mq(sm) {
-    margin: var(--spacing-5) 0 0;
-  }
+.l-footerOuter {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: var(--spacing-3) 0 0;
 
   @include mixins.mq(xl) {
-    margin-top: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: var(--spacing-4) 0 0;
   }
 
   .widget_nav_menu {
     ul {
       display: flex;
       justify-content: flex-end;
+      flex-direction: column;
+
+      @include mixins.mq(xl) {
+        flex-direction: row;
+      }
     }
 
     li {

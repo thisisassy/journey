@@ -12,13 +12,11 @@
   <div class="l-wrapper">
     <header class="l-header">
       <h1 class="u-blogTitle"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
-      <nav>
-        <ul>
-          <li><a href="">MENU</a></li>
-          <li><a href="">MENU</a></li>
-          <li><a href="">MENU</a></li>
-          <li><a href="">MENU</a></li>
-          <li><a href="">MENU</a></li>
-        </ul>
+      <?php if(has_nav_menu('global-menu')): ?>
+      <nav class="o-globalNavi">
+        <?php wp_nav_menu(array(
+        'theme_location' => 'global-menu',
+        )); ?>
       </nav>
+      <?php endif; ?>
     </header>
